@@ -4,9 +4,11 @@ public class Main {
     public static void main(String[] args) {
         List<String> list = new ArrayList<>();
         List<String> list2 = new LinkedList<>();
+        List<Object> listaMixta = new ArrayList<>();
         Set<Integer> set = new TreeSet<>();
         Set<String> set2 = new HashSet<>();
         HashMap<String, Integer> hashMap = new HashMap<>();
+
 
         list.add("Andra");
         list.add("Nico");
@@ -15,6 +17,10 @@ public class Main {
         list2.add("Matei");
         list2.add("Edi");
         list2.add("Marius");
+
+        listaMixta.add("Andra");
+        listaMixta.add(25);
+        listaMixta.add(3.14);
 
         set.add(10);
         set.add(25);
@@ -30,6 +36,7 @@ public class Main {
 
         System.out.println(list);
         System.out.println(list2);
+        System.out.println(listaMixta);
         System.out.println(set);
         System.out.println(set2);
         System.out.println(hashMap);
